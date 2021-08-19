@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: .3s;
+}
+
+body {
+    background-color: rgba(80, 141, 255, 0.8);
+}
+
+#app {
+    max-width: 50vw;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.heading {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.input-feild {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-feild input[type="text"] {
+    flex-basis: 79%;
+    min-height: 35px;
+    padding: 8px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+.input-feild input[type="submit"] {
+    flex-basis: 19%;
+    min-height: 35px;
+    color: #fff;
+    background-color: rgb(255, 100, 60);
+    border: none;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.input-feild input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.list {
+    height: 400px;
+    margin: 20px 0 0 0;
+    padding: 0 10px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(80, 141, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: orangered;
+}
+
+.list li {
+    list-style: none;
+    margin: 12px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px .1px #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list li span,
+.list li button {
+    padding: 10px 20px;
+}
+
+.list li span {
+    flex-basis: 90%;
+    font-size: 18px;
+}
+
+.list li span:hover {
+    cursor: pointer;
+}
+
+.list li button {
+    flex-basis: 10%;
+    font-size: 18px;
+    color: red;
+    background-color: #fff;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.list li button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.clear-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.clear-btn button {
+    padding: 10px 50px;
+    color: #fff;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+}
+
+.clear-btn button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
